@@ -19,6 +19,7 @@ dependencies:
   # Visualization
   - matplotlib
   - ipympl
+  - ffmpeg
 
   # Molecular libraries
   - rdkit
