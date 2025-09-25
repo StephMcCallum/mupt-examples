@@ -12,5 +12,6 @@ dependencies:
   - py3Dmol
   - python >=3.10, <3.13
   - scipy
+  - jupyter
   - pip:
-      - build
+	- build
