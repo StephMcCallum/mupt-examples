@@ -1,0 +1,17 @@
+name: mupt-examples
+channels:
+  - conda-forge
+dependencies:
+  - freud=3.0
+  - gsd >=3.0
+  - hoomd=5.3.0
+  - mbuild >=1.0
+  - numpy <2.0
+  - openbabel >=3
+  - pip
+  - py3Dmol
+  - python >=3.10, <3.13
+  - scipy
+  - jupyter
+  - pip:
+	- build
