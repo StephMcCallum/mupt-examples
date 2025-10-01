@@ -5,3 +5,4 @@ py.test --nbval-lax --current-env -vv \
     mupt_primitives_rdkit.ipynb \
     mol_from_scratch.ipynb \
     ellipsoidal_chain_placement.ipynb \
+    tripeptide.ipynb \
