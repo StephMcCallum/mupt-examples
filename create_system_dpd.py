@@ -89,5 +89,6 @@ def create_polymer_system_dpd(num_pol,num_mon,density,k=20000,bond_l=1.0,r_cut=1
         snap=simulation.state.get_snapshot()
         
     end_time = time.perf_counter()
+    total_time = end_time - start_time
     print("Total build and simulation time:", end_time - start_time)
-    return snap.particles.position
+    return total_time #returning time instead of positions for parameter sweep
