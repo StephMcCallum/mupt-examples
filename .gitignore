@@ -176,3 +176,4 @@ cython_debug/
 # Notebook outputs
 /alignments/*
 *.mol
+/OpenFF_MD_input_files/*
