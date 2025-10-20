@@ -172,3 +172,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Notebook outputs
+/alignments/*
+*.mol
+/OpenFF_MD_input_files/*
