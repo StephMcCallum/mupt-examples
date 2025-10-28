@@ -2,9 +2,9 @@ import numpy as np
 R_excl : float = 10.0
 bond_length : float = 1.5 # 5.5
 angle_max_rad : float = np.pi/4
-n_chains : int = 4
-dop_min : int = 10 # must be at least 2!
-dop_max : int = 15
+n_chains : int = 10
+dop_min : int = 50 # must be at least 2!
+dop_max : int = 100
 
 from mupt.geometry.shapes import Ellipsoid, Sphere
 from mupt.geometry.coordinates.reference import CoordAxis, origin
@@ -70,11 +70,13 @@ for chain_len in np.random.randint(dop_min, dop_max + 1, size=n_chains):
         max_registration_iter=100,
     )
     mol_handle = univprim.attach_child(molprim)
+    univprim.expand(mol_handle)
 builder = DPDRandomWalk()
 for handle,placement in builder.generate_placements(univprim):
-    print(placement)
+    #print(placement)
+    pass
 
-univprim.visualize_topology()
-print(univprim.hierarchy_summary(to_depth=2))
+#univprim.visualize_topology()
+#print(univprim.hierarchy_summary(to_depth=2))
 
 
