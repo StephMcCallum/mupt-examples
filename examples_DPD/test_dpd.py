@@ -15,7 +15,7 @@ from mupt.interfaces.smiles import primitive_from_smiles
 
 import networkx as nx
 from mupt.mupr.topology import TopologicalStructure
-from mupt.builders.dpd import DPD_RandomWalk
+from mupt.builders.dpd import DPDRandomWalk
 from mupt.geometry.coordinates.directions import random_unit_vector
 
 AXIS : CoordAxis = CoordAxis.X
@@ -70,7 +70,7 @@ for chain_len in np.random.randint(dop_min, dop_max + 1, size=n_chains):
         max_registration_iter=100,
     )
     mol_handle = univprim.attach_child(molprim)
-builder = DPD_RandomWalk(univprim)
+builder = DPDRandomWalk()
 for handle,placement in builder.generate_placements(univprim):
     print(placement)
 
