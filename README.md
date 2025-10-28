@@ -2,6 +2,18 @@
 
 Environment can be set up from accompanying [requirements file](reqs.yml) along with pip install of the [Multiscale Polymer Toolkit](https://github.com/MuPT-hub/mupt)
 
+## System building examples (high-level):
+0. [Simple peptide example](./examples_system/hierarchy_on_peptides.ipynb)
+1. [Backmapped chain/melt building](./examples_system/ellipsoidal_chain_placement.ipynb)
+2. [Parameterization, export, and MD simulations with OpenFF](./examples_system/mdfiles_with_openff.ipynb)
+
+## MuPT Representation components tutorials (low-level):
+0. ["Molecule from scratch" - bare basics](./examples_repr/mol_from_scratch_basic.ipynb)
+1. ["Molecule from scratch" - advanced usage](./examples_repr/mol_from_scratch_advanced.ipynb)
+2. [Molecule from SMILES/RDKit](./examples_repr/mupt_primitives_rdkit.ipynb)
+3. [Rigid body shapes](./examples_repr/mupt_shapes.ipynb)
+4. [Inter-body spatial alignment](./examples_repr/connector_alignment.ipynb)
+
 ## DPD notebooks:
 The DPD notebooks are meant to demonstrate a system initialization workflow of polymer various systems and configuration routines. These configurations are relaxed using a HOOMD simulation with DPD forces. A list of the notebooks and their descriptions:
 + DPD_init.ipynb: initializes a polymer system using a random walk and relaxes the system using DPD forces.
