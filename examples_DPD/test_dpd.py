@@ -1,3 +1,10 @@
+import logging
+from mupt.builders.dpd import DPDRandomWalk, LOGGER as DPD_LOGGER
+
+loghandler = logging.StreamHandler()
+loghandler.setLevel(logging.DEBUG)
+DPD_LOGGER.addHandler(loghandler)
+
 import numpy as np
 R_excl : float = 10.0
 bond_length : float = 1.5 # 5.5
@@ -71,7 +78,7 @@ for chain_len in np.random.randint(dop_min, dop_max + 1, size=n_chains):
     )
     mol_handle = univprim.attach_child(molprim)
     univprim.expand(mol_handle)
-builder = DPDRandomWalk()
+builder = DPDRandomWalk(output_name="init")
 for handle,placement in builder.generate_placements(univprim):
     #print(placement)
     pass
