@@ -11,7 +11,7 @@ bond_length : float = 1.5 # 5.5
 angle_max_rad : float = np.pi/4
 n_chains : int = 10
 dop_min : int = 50 # must be at least 2!
-dop_max : int = 100
+dop_max : int = 150
 
 from mupt.geometry.shapes import Ellipsoid, Sphere
 from mupt.geometry.coordinates.reference import CoordAxis, origin
