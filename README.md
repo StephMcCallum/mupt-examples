@@ -1,8 +1,23 @@
 # mupt-examples
 
-Environment can be set up from accompanying [requirements file](reqs.yml) along with pip install of the [Multiscale Polymer Toolkit](https://github.com/MuPT-hub/mupt)
+## Installation
+To obtain a copy of these examples, clone this repo and navigate into it, via:
+```sh
+git clone https://github.com/MuPT-hub/mupt-examples # this repo
+cd mupt-examples
+```
+Then set up a virtual environment with the Multiscale Polymer Toolkit installed to run the notebooks bundled here. The [`mupt` toolkit repo](https://github.com/MuPT-hub/mupt) provides details on how to do so, but if you don't like clicking you can also run the commands below, assuming you have a package management systems such as [Mamba](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html) (recommended) or [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) installed on your machine:
+```sh
+mamba env create -f conda-envs/release-env.yml
+mamba activate mupt-env
+git clone https://github.com/MuPT-hub/mupt # the toolkit 
+cd mupt
+pip install .
+```
+You can then safely remove the `mupt` directory from your file system if you wish to
 
-## System building examples (high-level):
+## Index of examples
+### System building examples (high-level):
 0. [Simple peptide example](./examples_system/hierarchy_on_peptides.ipynb)  
 Assembles a MuPT representation component hierarchy for a peptide generated from your choice of FASTA string  
 Depicts the topological and hierarchical organization of parts in a colorful graphic with 2D coordinates
@@ -13,7 +28,7 @@ Allows specification of arbitrary homopolymer or copolymer chemistry, number of 
 Shows how to use the OpenFF toolkit to parameterize and export MD input files from a MuPT-build starting structure (obtained from the previous demo)  
 Concludes by running a short MD simulation in OpenMM
 
-## MuPT Representation components tutorials (low-level):
+### MuPT Representation components tutorials (low-level):
 0. ["Molecule from scratch" - bare basics](./examples_repr/mol_from_scratch_basic.ipynb)  
 Shows how to initialize a basic "bond graph" hierarchy with no coordinates
 1. ["Molecule from scratch" - advanced usage](./examples_repr/mol_from_scratch_advanced.ipynb)  
