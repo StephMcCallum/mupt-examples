@@ -1,4 +1,4 @@
-name: mupt-examples
+name: mupt-examples # TB: consider deprecating in favor of dpd-env.yml
 channels:
   - conda-forge
 dependencies:
