@@ -39,11 +39,11 @@ dependencies:
     - gsd>=3.0
     - freud
     - fresnel
-    - flowermd
 
     ## MoSDeF
     - mbuild>=1.0
     - gmso
+    - flowermd # relatively clean way to install all of FlowerMD's dependencies; actual package will be quashed with pip install below
 
-    # - pip:
-        # - some_pypi_module_name
+    - pip:
+      - git+https://github.com/cmelab/flowerMD.git # experimental DPD functionality not yet in FlowerMD conda releases
