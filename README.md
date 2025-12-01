@@ -48,7 +48,7 @@ The DPD notebooks are meant to demonstrate a system initialization workflow of p
 + DPD_init_ell.ipynb: initializes a random configuration of ellipsoid chains, based on the flowerMD ellipsoid model, and relaxes the system using DPD forces.
 + DPD_init_mbuild.ipynb: initializes a polymer system using an mbuild2.0 random walk and relaxes the system using DPD forces.
 
-Environment for  DPD_init.ipynb can be installed with `dpd_environment.yml` or with:
+Environment for  DPD_init.ipynb can be installed with `dpd-env.yml` or with:
 
 ```
 conda create -n mupt-init -c conda-forge matplotlib scipy gsd freud hoomd fresnel jupyter

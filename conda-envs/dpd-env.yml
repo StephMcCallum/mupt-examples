@@ -30,10 +30,6 @@ dependencies:
     - openbabel>=3
 
     # Molecular Dynamics toolkits
-    ## OpenFF
-    # - openff-toolkit
-    # - openff-interchange
-
     ## HOOMD
     - hoomd
     - gsd>=3.0
