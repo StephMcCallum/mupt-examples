@@ -5,9 +5,14 @@ example_dirs=(
     'examples_repr'
     'examples_system'
 )
+batch_status="passing"
+
 for dirname in "${example_dirs[@]}"; do
     pushd "./$dirname"
-    # echo "$PWD"
-    bash "./notebook_tests.sh"
+    bash "./notebook_tests.sh" || batch_status="failing"
     popd
 done
+
+if [ $batch_status = "failing" ]; then
+    exit 1 # bubble up failure to CI if any of batches fail
+fi
