@@ -1,0 +1,28 @@
+{
+    "polyethylene": {
+        "head_ethylene": "[H:1]-[CH2:2]-*",
+        "mid_ethylene": "*-[CH2:1]-[CH2:2]-*",
+        "tail_ethylene": "*-[CH2:1]-[H:2]"
+    },
+    "polystyrene": {
+        "head_styrene": "[H:1]-C(c1ccccc1)[CH2:2]-*",
+        "mid_R_styrene": "*-[C@H:1](c1ccccc1)[CH2:2]-*",
+        "mid_achiral_styrene": "*-[CH:1](c1ccccc1)[CH2:2]-*",
+        "mid_S_styrene": "*-[C@@H:1](c1ccccc1)[CH2:2]-*",
+        "tail_styrene": "*-[C:1](c1ccccc1)=C(-[H:2])"
+    },
+    "polyethersulfone": {
+        "head_bisphenol_S": "[H]-[O:1]c1ccc(cc1)S(=O)(=O)c1cc[c:2](cc1)-*",
+        "mid_bisphenol_S": "*-[O:1]c1ccc(cc1)S(=O)(=O)c1cc[c:2](cc1)-*",
+        "tail_bisphenol_S": "*-[O:1]c1ccc(cc1)S(=O)(=O)c1ccc(cc1)[O:2]-[H]",
+        "head_bisphenol_A": "[H]-[O:1]c1ccc(cc1)C(-C)(-C)c1cc[c:2](cc1)-*",
+        "mid_bisphenol_A": "*-[O:1]c1ccc(cc1)C(-C)(-C)c1cc[c:2](cc1)-*",
+        "tail_bisphenol_A": "*-[O:1]c1ccc(cc1)C(-C)(-C)c1ccc(cc1)[O:2]-[H]"
+    },
+    "PEG-PLGA": {},
+    "polymethyl-methacrylate": {
+        "head_MMA": "[H]-[CH2:1]-[C:2](C(=O)OC)(C)-*",
+        "mid_MMA": "*-[CH2:1]-[C:2](C(=O)OC)(C)-*",
+        "tail_MMA": "*-[CH2:1]-[C:2](C(=O)OC)=C"
+    }
+}
