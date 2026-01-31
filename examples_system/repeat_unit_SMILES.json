@@ -19,10 +19,13 @@
         "mid_bisphenol_A": "*-[O:1]c1ccc(cc1)C(-C)(-C)c1cc[c:2](cc1)-*",
         "tail_bisphenol_A": "*-[O:1]c1ccc(cc1)C(-C)(-C)c1ccc(cc1)[O:2]-[H]"
     },
+    "P3HT": {},
     "PEG-PLGA": {},
     "polymethyl-methacrylate": {
         "head_MMA": "[H]-[CH2:1]-[C:2](C(=O)OC)(C)-*",
         "mid_MMA": "*-[CH2:1]-[C:2](C(=O)OC)(C)-*",
         "tail_MMA": "*-[CH2:1]-[C:2](C(=O)OC)=C"
-    }
+    },
+    "Kapton": {},
+    "Cellulose (D-glucose)" : {}
 }
