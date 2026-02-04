@@ -15,6 +15,6 @@
         "tail_oxydianiline": "*-[c:1]1ccc(cc1)-O-c2cc[c:2](cc2)-[NH2]",
         "head_pyromellitimide": "[H]-[N:1]1C(=O)c2c(C(=O)1)cc3c(c2)C(=O)[N:2](C(=O)3)-*",
         "mid_pyromellitimide": "*-[N:1]1C(=O)c2c(C(=O)1)cc3c(c2)C(=O)[N:2](C(=O)3)-*",
-        "tail_pyromellitimide": "*-[N:1]1C(=O)c2c(C(=O)1)cc3c(c2)C(=O)[N:2](C(=O)3)-[H]*"
+        "tail_pyromellitimide": "*-[N:1]1C(=O)c2c(C(=O)1)cc3c(c2)C(=O)[N:2](C(=O)3)-[H]"
     }
 }
