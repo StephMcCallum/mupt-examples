@@ -73,7 +73,7 @@ def build_repeat_unit_lexicon(recipe: StatisticalLinearPolymerRecipe, semiminor_
     from mupt.geometry.coordinates.reference import CoordAxis, origin
     from mupt.geometry.shapes import Ellipsoid
     from mupt.geometry.transforms.rigid import rigid_vector_coalignment
-    from mupt.interfaces.rdkit import suppress_rdkit_logs
+    from mupt.chemistry.rdkit import suppress_rdkit_logs
     from mupt.interfaces.smiles import primitive_from_smiles
     from mupt.roles import PrimitiveRole
 
