@@ -256,7 +256,6 @@ def build_statistical_linear_polymer_melt(recipe: StatisticalLinearPolymerRecipe
     """Build a role-aware MuPT hierarchy from a concrete melt plan."""
 
     from mupt.mupr.primitives import Primitive
-    from mupt.mupr.topology import TopologicalStructure
     from mupt.roles import PrimitiveRole
 
     universe = Primitive(label=f"{recipe.name}_dense_melt", role=PrimitiveRole.UNIVERSE)
@@ -286,7 +285,7 @@ def build_statistical_linear_polymer_melt(recipe: StatisticalLinearPolymerRecipe
                 atom.role = PrimitiveRole.PARTICLE
             segment.attach_child(residue)
         segment.set_topology(
-            nx.path_graph(segment.children_by_handle.keys(), create_using=TopologicalStructure),
+            nx.path_graph(segment.children_by_handle.keys()),
             max_registration_iter=100,
         )
         universe.attach_child(segment)
